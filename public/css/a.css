@@ -1,0 +1,119 @@
+html{
+    box-sizing: border-box;
+}
+
+.header-top{
+    position: fixed;
+}
+.header-1{
+    position: relative;
+    padding: 25px 0;
+}
+.menu_list{
+    position: relative;
+}
+.menu{
+    width: auto;
+    justify-content: space-between;
+}
+.content_menu{
+    color: #000;
+    font-size: 1.7rem;
+    font-weight: 700;
+
+}
+.menu_list>a::before{
+    content: "";
+    width: 100%;
+    height: 0;
+    background-color: rgba(216,143,15,.7);
+    display: inline-block;
+    position: absolute;
+    bottom: 15px;
+    top: inherit;
+    left: 0;
+    right: 0;
+    margin: auto;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+    opacity: 1;
+}
+/* .mynav{
+    background: transparent;
+} */
+/* .mynav::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    bottom: 0;
+    z-index: 9;
+    height: 100vh;
+    opacity: 0;
+    visibility: hidden;
+} */
+.home_megamenu{
+    max-width: 700px;
+    width: 100%;
+    font-size: 14px;
+    /* display: none; */
+}
+.home_megamenu_list{
+    float: left;
+    list-style-type: none;
+}
+.home_submenu{
+    font-size: 1.4rem;
+    margin: 0;
+    padding: 0;
+    float: left;
+    display: flex;
+    list-style: none outside none;
+}
+.home_submenu_list{
+    float: left;
+    padding: 0px 15px;
+    margin-bottom: 15px;
+}
+.home_megamenu_list .home_list_has_submenu .home_submenu::marker{
+}
+.home_submenu_items{
+
+}
+.title-item>a{
+    color: #444444;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 110%;
+}
+.content_item{
+    color: #484848;
+}
+.content_item img{
+    width: 100%;
+}
+/* dropdown */
+.megamenu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display:block;
+    float: left;
+    min-width: 10rem;
+    padding: .5rem 0;
+    margin: .125rem 0 0;
+    font-size: 1rem;
+    color: #212529;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+}
+

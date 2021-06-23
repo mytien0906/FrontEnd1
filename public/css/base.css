@@ -1,0 +1,29 @@
+:root{
+    --primary-color:#8dc63f;
+    --text-color: #141d23;
+    --pink-color:  #ea375c;
+    --top-header-height: 208px;
+    --top-header-above: 56px;
+    --top-header-below:calc(var(--top-header-height)var(--top-header-above));
+}
+
+*{
+    box-sizing: inherit;
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    color: #000000;
+    width: 100%;
+    height: auto;
+    font-family: "Lora", Sans-serif;
+}
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
